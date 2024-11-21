@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* App Title */
+.app-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Input Section */
+.task-input-section {
+    background: #ffffff;
+    border-radius: 10px;
+    color: #333;
+}
+
+.task-input-section input {
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.task-input-section button {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #4e54c8;
+    border: none;
+    transition: all 0.3s;
+}
+
+.task-input-section button:hover {
+    background: #373d98;
+    color: #fff;
+}
+
+/* Task List Styling */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list .list-group-item {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.task-list .list-group-item .task-title {
+    flex: 1;
+}
+
+.task-list .list-group-item.completed .task-title {
+    text-decoration: line-through;
+    color: #202020;
+}
+
+/* Task Buttons */
+.task-list button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.task-list button:hover {
+    color: #4e54c8;
+}
+
+.task-list .mark-complete-btn {
+    color: #28a745;
+}
+
+.task-list .edit-btn {
+    color: #ffc107;
+}
+
+.task-list .delete-btn {
+    color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .app-title {
+        font-size: 1.8rem;
+    }
+
+    .task-input-section input {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .task-input-section button {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .task-list .list-group-item {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}
