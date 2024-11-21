@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siraj_To-Do List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app.css/app.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <!-- App Header -->
+                <h1 class="text-center app-title mb-4">Welcome</h1>
+                <!-- Add Task Section -->
+                <div class="task-input-section shadow-sm rounded p-3 mb-4">
+                    <input id="taskInput" type="text" class="form-control form-control-lg" placeholder="What needs to be done?">
+                    <button id="addTaskBtn" class="btn btn-primary w-100 mt-3">Add Task</button>
+                </div>
+                <!-- Task List -->
+                <ul id="taskList" class="list-group task-list">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/app.js/app.js"></script>
+</body>
+</html>
